@@ -33,12 +33,12 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="目录 概述 Android相机软件框架 基本组件概念  概述整理Qcom Camera HAL中的主要模块和流程  Android相机软件框架：Qcom HAL主要包括CamX get_number_of_cameras：创建HAL的ENV，枚举物理camera，解析camera信息表，建立cameraId映射关系. Open接口：cameraId映射关系的使用，创建HAL Device. con">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2024/08/06/My-New-Post/png/camera%20arch.png">
+<meta property="og:image" content="http://example.com/2024/08/06/My-New-Post/camera_arch.png">
 <meta property="article:published_time" content="2024-08-06T13:30:47.000Z">
-<meta property="article:modified_time" content="2024-08-08T16:43:24.162Z">
+<meta property="article:modified_time" content="2024-08-09T13:57:52.562Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2024/08/06/My-New-Post/png/camera%20arch.png">
+<meta name="twitter:image" content="http://example.com/2024/08/06/My-New-Post/camera_arch.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -220,14 +220,7 @@
 <li>request部分：Request再Camx中进行处理，Request在Chi中的处理</li>
 </ol>
 <h2 id="Android相机软件框架"><a href="#Android相机软件框架" class="headerlink" title="Android相机软件框架"></a>Android相机软件框架</h2><p>Camera HAL3是一个per-frame Request的模型，用一个Request来描述上层希望底层如何处理某一帧，基本的处理框架如下图1所示，具体调用关系：APP-&gt;Frameworks-&gt;cameraservice-&gt;provider-&gt;OEM HAL -&gt; Qcom HAL</p>
-<div align="center">
-<img src="./png/camera arch.png" alt="camera架构" width="700" height="700" />
-</div>
-<div style="text-align: center;">
-
-<p><span style="font-size:24px;"><strong>Camera 架构</strong></span></p>
-</div>
-
+<p><img src="/2024/08/06/My-New-Post/camera_arch.png" alt="camera架构"></p>
 <br>
 
 <h3 id="Qcom-HAL主要包括Camx和Chi部分"><a href="#Qcom-HAL主要包括Camx和Chi部分" class="headerlink" title="Qcom HAL主要包括Camx和Chi部分"></a>Qcom HAL主要包括Camx和Chi部分</h3><ol>
@@ -403,7 +396,7 @@
       
         <div>
           <span class="icon-brush"></span>
-          437
+          434
           &nbsp;|&nbsp;
           <span class="icon-coffee"></span>
           00:03
